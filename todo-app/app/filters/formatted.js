@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module('slideshow-app');
+var app = angular.module('todo-app');
 
 app.filter('formatted', function() {
 

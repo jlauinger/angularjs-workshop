@@ -1,0 +1,8 @@
+<h1>AngularJS ToDo-List App</h1>
+
+<h3>Verfügbare Punkte:</h3>
+<ul>
+    <li ng-repeat="item in items track by $index">
+        <a href="#/{{ $index }}">{{ item.title }}</a>
+    </li>
+</ul>
