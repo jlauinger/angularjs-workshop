@@ -12,12 +12,14 @@ Slot: Donnerstag, 13.10.2016 14:00 Uhr S202/C110
    - Pure JavaScript
    - JQuery
    - AngularJS
-4. AngularJS Slide Viewer
+4. AngularJS ToDo-Liste
    - Datenstruktur: JSON-Objekt
-   - Eine Folie anzeigen: Direktiven
-   - Mehrere Folien: Controller
+   - Liste von Items: ng-repeat
+   - Item-Details: Routen
    - Backend: JSON-Datei: Services
-   - Formatierung: Syntax & Filter
+   - Elemente hinzufügen und löschen: Controller
+   - Abstraktion: Eigene Direktiven
+   - Formatierung: Eigene Filter
 5. Vergleich mit Angular 2
    - TypeScript
    - Components
