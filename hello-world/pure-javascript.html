@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World! Pure JavaScript</title>
+</head>
+<body>
+    <h1>Hallo <span id="label"></span>!</h1>
+    Dein Name: <input type="text" id="name" />
+
+    <script>
+        var nameElem = document.getElementById("name");
+        var labelElem = document.getElementById("label");
+
+        nameElem.addEventListener('keyup', function() {
+            labelElem.innerText = nameElem.value;
+        });
+    </script>
+</body>
+</html>
