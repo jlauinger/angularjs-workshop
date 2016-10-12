@@ -25,7 +25,7 @@ app.factory('itemsService', ['$http', '$q', function($http, $q) {
                 loadItems().then(function success() {
                     resolve(items);
                 }, function error() {
-                    console.log("Unable to load items.");
+                    console.log("Unable to load sitems.");
                 });
             }
         });
@@ -34,14 +34,32 @@ app.factory('itemsService', ['$http', '$q', function($http, $q) {
     function getItem(id) {
         return $q(function (resolve, reject) {
             getItems().then(function(items) {
-                resolve(items[id]);
+                resolve(items.find(function(item) { return item.id === id; }));
             });
         });
     }
 
+    function addItem(item) {
+        items.push(item);
+    }
+
+    function removeItem(id) {
+        var index = items.map(function(item) { return item.id }).indexOf(id);
+        items.splice(index, 1);
+    }
+
+    function generateId() {
+        if (items.length === 0) return 1;
+        var ids = items.map(function(item) { return item.id });
+        return Math.max.apply(null, ids) + 1;
+    }
+
     return {
         getItem: getItem,
-        getItems: getItems
+        getItems: getItems,
+        addItem: addItem,
+        removeItem: removeItem,
+        generateId: generateId
     };
 
 }]);

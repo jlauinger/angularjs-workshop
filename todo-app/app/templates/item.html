@@ -1,5 +1,22 @@
-<h1>{{ item.title }}</h1>
-<p ng-bind-html="item.body | formatted"></p>
+<h1>{{ item.subject }}</h1>
+<p ng-bind-html="item.details | formatted"></p>
 
 <hr />
-<a href="#/">Zurück zur Folienübersicht</a>
+<button ng-click="startEdit()">Bearbeiten</button>
+<button ng-click="removeItem()">Löschen</button>
+
+<div ng-show="editing">
+    <hr />
+    <label>
+        Titel:<br />
+        <input type="text" ng-model="item.subject" />
+    </label><br />
+    <label>
+        Details:<br />
+        <textarea ng-model="item.details"></textarea>
+    </label><br />
+    <button ng-click="finishEdit()">Fertig</button>
+</div>
+
+<hr />
+<a href="#/">Zurück zur gesamten Liste</a>

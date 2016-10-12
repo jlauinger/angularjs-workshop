@@ -1,10 +1,32 @@
 [
   {
-    "title": "Hallo Welt!",
-    "body": "I am awesome."
+    "id": 1,
+    "subject": "Atemweg (Airway)",
+    "details": "Sicherstellen, dass die Atemwege frei sind. Kopf überstrecken, Mundraum anschauen.",
+    "done": false
   },
   {
-    "title": "Second slide!",
-    "body": "/Also/ *great*."
+    "id": 2,
+    "subject": "Beatmung (Breathing)",
+    "details": "Atmung überprüfen. Wölbung des Brustkorbs, Atem hören und spüren. Stabile Seitenlage.",
+    "done": false
+  },
+  {
+    "id": 3,
+    "subject": "Kreislauf (Circulation)",
+    "details": "Puls und Blutdruck überprüfen. Herz-Lungen-Wiederbelebung. Druckverbände anlegen.",
+    "done": false
+  },
+  {
+    "id": 4,
+    "subject": "Defizit (Disability)",
+    "details": "Reflexe überprüfen. Epilepsie. Lähmungserscheinungen erkennen.",
+    "done": false
+  },
+  {
+    "id": 5,
+    "subject": "Erkennung (Environment/Exploration)",
+    "details": "Bodycheck durchführen. Frakturen fixieren. Wundverbände anlegen. Schmerztherapie.",
+    "done": false
   }
 ]
