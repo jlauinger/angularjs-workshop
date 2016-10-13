@@ -14,6 +14,7 @@ Slot: Donnerstag, 13.10.2016 14:00 Uhr S202/C110
    - AngularJS
 4. AngularJS ToDo-Liste
    - Datenstruktur: JSON-Objekt
+   - Boilerplate
    - Liste von Items: ng-repeat
    - Item-Details: Routen
    - Backend: JSON-Datei: Services
@@ -21,7 +22,7 @@ Slot: Donnerstag, 13.10.2016 14:00 Uhr S202/C110
    - Abstraktion: Eigene Direktiven
    - Formatierung: Eigene Filter
 5. Vergleich mit Angular 2
+   - Überblick
    - TypeScript
-   - Components
    - Vorteile / Nachteile
 6. Fragen
